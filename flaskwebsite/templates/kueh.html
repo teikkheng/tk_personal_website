@@ -1,0 +1,160 @@
+{% extends "layout.html" %}
+{% block content %}
+<article class="media content-section">
+    <div class="media-body">
+        <h1 class="border-bottom mb-4"><a class="article-title">Kueh Image Classifier</a></h1>
+
+        <h5><a href="http://kueh-img-classifier.herokuapp.com/" target="_blank">
+                Click HERE to go to the classifier</a></h5>
+        <small class="text-muted">
+            Note: Please allow for some time for the app to start. The app deployed might be
+            suspended by Heroku after 15 minutes of inactivity and will need time to restart.
+        </small>
+        <br>
+        <br>
+        <h3><a class="article-title">What are Kuehs?</a></h3>
+        <p class="article-content">Kuehs are a sweet or savoury bite-sized snacks, with its roots traced back to Malay
+            and Indonesian cuisines. They are made with traditional techniques and authentic ingredients.
+            Here are 15 traditional kuehs that are commonly found in Singapore:
+        </p>
+        <br>
+        <div>
+            <h4><a>Pulut Inti</a></h4>
+            <img class="article-img" src="{{ url_for('static', filename='kueh_images/pulut_inti.jpeg') }}">
+            <p class="article-content">
+                Made with steamed glutinous rice that have been infused with sweet coconut milk. Shaped like a
+                pyramid, the Pulut Inti has it’s tip packed with grated coconut that is cooked with cane sugar
+                and jawa/palm sugar.</p>
+            <br>
+        </div>
+        <div>
+            <h4><a>Tutu Kueh</a></h4>
+            <img class="article-img" src="{{ url_for('static', filename='kueh_images/tutu_kueh.jpeg') }}">
+            <p class="article-content">
+                Little steamed rice-flour cakes filled with delicious fillings such as peanut, coconut and
+                occasionally chocolate or gula melaka.</p>
+            <br>
+        </div>
+        <div>
+            <h4><a>Kueh Pie Tee</a></h4>
+            <img class="article-img" src="{{ url_for('static', filename='kueh_images/kueh_pie_tee.jpeg') }}">
+            <p class="article-content">
+                A popular Peranakan dish, it is simply a thin and crispy pastry tart shell filled with a spicy,
+                sweet mixture of thinly sliced vegetables and prawns.</p>
+            <br>
+        </div>
+        <div>
+            <h4><a>Putu Ayu</a></h4>
+            <img class="article-img" src="{{ url_for('static', filename='kueh_images/putu_ayu.jpeg') }}">
+            <p class="article-content">
+                This beautiful steamed treat, shaped like a mini bundt cake, is essentially green pandan
+                sponge cake crowned with shredded coconut.</p>
+            <br>
+        </div>
+        <div>
+            <h4><a>Talam Ubi</a></h4>
+            <img class="article-img" src="{{ url_for('static', filename='kueh_images/talam_ubi.jpeg') }}">
+            <p class="article-content">
+                This delicious cake has two layers. The top layer is made from coconut milk, and the bottom
+                layer of the cake is made with grated cassava and is flavored with palm sugar.</p>
+            <br>
+        </div>
+        <div>
+            <h4><a>Ondeh Ondeh</a></h4>
+            <img class="article-img" src="{{ url_for('static', filename='kueh_images/ondeh_ondeh.jpeg') }}">
+            <p class="article-content">
+                Made from either sweet potato or glutinous rice flour. These cute little balls are infused
+                with pandan juice and filled with gula Melaka or palm sugar before being rolled in some
+                freshly grated coconut.</p>
+            <br>
+        </div>
+        <div>
+            <h4><a>Lemper Udang</a></h4>
+            <img class="article-img" src="{{ url_for('static', filename='kueh_images/lemper_udang.jpeg') }}">
+            <p class="article-content">
+                Made from glutinous rice, infused with coconut milk and flavour from pandan leaves. While the
+                glutinous rice is steaming, grated coconut will be fried in a dry wok to bring out its fragrance
+                before being added as a filling into the glutinous rice and lastly, wrapped in banana leaves.</p>
+            <br>
+        </div>
+        <div>
+            <h4><a>Kueh Lapis</a></h4>
+            <img class="article-img" src="{{ url_for('static', filename='kueh_images/kueh_lapis.jpeg') }}">
+            <p class="article-content">
+                Easiest to recognize and remember due to its colourful layers, some people call this
+                “thousand-layer cake” but it actually only has 9 layers. It is made with tapioca, rice flour
+                and coconut milk before being steamed.</p>
+            <br>
+        </div>
+        <div>
+            <h4><a>Kueh Salat</a></h4>
+            <img class="article-img" src="{{ url_for('static', filename='kueh_images/kueh_salat.jpeg') }}">
+            <p class="article-content">
+                A two-tiered dessert with a base of steamed glutinous rice weighted down by a thick layer of
+                custard flavoured with freshly squeezed coconut milk and pandan juice.
+            </p>
+            <br>
+        </div>
+        <div>
+            <h4><a>Kueh Talam</a></h4>
+            <img class="article-img" src="{{ url_for('static', filename='kueh_images/kueh_talam.jpeg') }}">
+            <p class="article-content">
+                Not to be confused with Kueh Salat though their colours look almost similar. It also has two
+                layers, a top white layer made from coconut milk and rice flour and a bottom green layer made
+                from rice and mung bean flour with natural green colouring from pandan leaves.
+            </p>
+            <br>
+        </div>
+        <div>
+            <h4><a>Kueh Kosui</a></h4>
+            <img class="article-img" src="{{ url_for('static', filename='kueh_images/kueh_kosui.jpeg') }}">
+            <p class="article-content">
+                Made from tapioca starch and rice flour and sweetened with gula Melaka and sugar. Pandan leaves
+                enhance the fragrance of this kueh and it is usually served with freshly grated coconuts for
+                more texture and taste.
+            </p>
+            <br>
+        </div>
+        <div>
+            <h4><a>Kueh Dadar</a></h4>
+            <img class="article-img" src="{{ url_for('static', filename='kueh_images/kueh_dadar.jpeg') }}">
+            <p class="article-content">
+                It has juicy palm sugar flavoured grated coconut fillings enveloped within a piece of green crepe.
+                Pandan leaf is the core ingredient of Kueh Dadar and the green exterior is made of a batter coloured
+                with natural pandan juice extracted from pandan leaves, hence the tempting sweet fragrance.
+            </p>
+            <br>
+        </div>
+        <div>
+            <h4><a>Bingka Ubi</a></h4>
+            <img class="article-img" src="{{ url_for('static', filename='kueh_images/bingka_ubi.jpeg') }}">
+            <p class="article-content">
+                This baked tapioca cake is fragrant, semi-soft, slightly chewy and goes perfectly well when
+                paired with a cup of tea. It has an inviting aroma from the pandan leaves, eggs and coconut
+                milk hence its rich and flavourful taste.
+            </p>
+            <br>
+        </div>
+        <div>
+            <h4><a>Harum Manis</a></h4>
+            <img class="article-img" src="{{ url_for('static', filename='kueh_images/harum_manis.jpeg') }}">
+            <p class="article-content">
+                A steamed sponge cake embellished with slices of bananas. The steamed cakes are enriched by
+                the warm caramel-like sweetness from gula Melaka and wafts of aroma from the cooked bananas.
+            </p>
+            <br>
+        </div>
+        <div>
+            <h4><a>Ang Ku Kueh</a></h4>
+            <img class="article-img" src="{{ url_for('static', filename='kueh_images/ang_ku_kueh.jpeg') }}">
+            <p class="article-content">
+                A small round or oval shaped pastry with soft sticky glutinous rice flour skin wrapped around
+                a sweet filling in the centre. It is moulded to resemble a tortoise shell and is presented
+                resting on a square piece of banana leaf. The common and original fillings are sweet
+                bean paste and peanuts.
+            </p>
+            <br>
+        </div>
+    </div>
+</article>
+{% endblock content %}

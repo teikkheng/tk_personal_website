@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+<article class="media content-section">
+    <div class="media-body">
+        <h1 class="border-bottom mb-4"><a class="article-title">Dog Breed Image Classifier</a></h1>
+
+        <h5><a href="https://dog-breed-img-classifier.herokuapp.com/" target="_blank">
+                Click HERE to go to the classifier</a></h5>
+        <small class="text-muted">
+            Note: Please allow for some time for the app to start. The app deployed might be
+            suspended by Heroku after 15 minutes of inactivity and will need time to restart.
+        </small>
+        <br>
+        <br>
+        <img class="article-img" src="{{ url_for('static', filename='dog_images/dog1.jpeg') }}">
+        <img class="article-img" src="{{ url_for('static', filename='dog_images/dog2.jpeg') }}">
+        <br>
+        <br>
+        <img class="article-img" src="{{ url_for('static', filename='dog_images/dog3.jpeg') }}">
+        <img class="article-img" src="{{ url_for('static', filename='dog_images/dog4.jpeg') }}">
+        <p class="article-content">
+            In this project, we are provided with a training set and a test set of images of dogs.
+            Each image has a filename that is its unique id. The dataset comprises 120 breeds of dogs.
+            The goal is to create a classifier capable of determining a dog's breed from a photo.
+            The dataset is obtained from <a href="https://www.kaggle.com/c/dog-breed-identification"
+                target="_blank">https://www.kaggle.com/c/dog-breed-identification</a>
+        </p>
+</article>
+{% endblock content %}
