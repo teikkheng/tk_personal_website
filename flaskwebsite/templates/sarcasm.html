@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block content %}
+<article class="media content-section">
+    <div class="media-body">
+        <h1 class="border-bottom mb-4"><a class="article-title">Sarcasm Detection</a></h1>
+
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                <div class="form-group">
+                    {{ form.text.label(class="form-control-label") }}
+                    {% if form.text.errors %}
+                        {{ form.text(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.text.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.text(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+            </fieldset>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+        </form>
+
+        <br>
+        <br>
+        <h3><a class="article-title">Why Sarcasm?</a></h3>
+
+        <img class="article-img" src="{{ url_for('static', filename='other_images/social_media.jpeg') }}">
+
+        <p class="article-content">
+            With the rise of social media such as Reddit, Twitter, Facebook and Instagram in the last decade, there has been a tremendous increase in opinionated textual data over the internet. To better understand the opinions and emotions of internet users, sentiment analysis on social media has attracted much interest in the research areas of NLP. However, one of the major challenges in sentiment analysis is sarcasm detection. Sarcasm is an unconventional way of conveying a message which conflicts the context and this can lead to a state of ambiguity. 
+            
+            Here we present a model to detect sarcastic comments built using the deep learning library of FastAi based on recurrent neural network. The model is trained with about 1 million comments from the Internet commentary website Reddit, half of which are actual sarcastic comments. The dataset can be downloaded at <a
+            href="https://www.kaggle.com/danofer/sarcasm#train-balanced-sarcasm.csv"
+            target="_blank">https://www.kaggle.com/danofer/sarcasm#train-balanced-sarcasm.csv</a>
+        </p>
+</article>
+{% endblock content %}
