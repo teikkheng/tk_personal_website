@@ -53,7 +53,7 @@ torchtext==0.3.1
 torchvision==0.5.0
 tqdm==4.45.0
 typed-ast==1.4.1
-urllib3==1.25.9
+urllib3==1.26.5
 wasabi==0.6.0
 Werkzeug==1.0.0
 WTForms==2.3.1
